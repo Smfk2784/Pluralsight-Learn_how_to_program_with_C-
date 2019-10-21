@@ -9,7 +9,7 @@ int main(int argc, char const *argv[])
     string word1;
     string word2;
     string state;
-    bool terminate = true;
+    bool terminate {true};
 
     while (terminate)
     {
