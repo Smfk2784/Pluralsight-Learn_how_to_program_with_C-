@@ -16,9 +16,9 @@ int main(int argc, char const *argv[])
 
         // Get input data from the user
         cout << "Please enter your first word" << endl;
-        cin >> word1;
+        getline(cin, word1);
         cout << "Please enter your second word" << endl;
-        cin >> word2;
+        getline(cin, word2);
 
         // Check for the length of the words given by the user 
         if (word1.length() > word2.length())
