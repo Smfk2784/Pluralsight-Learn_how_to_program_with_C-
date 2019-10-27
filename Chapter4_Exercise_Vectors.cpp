@@ -38,17 +38,35 @@ int main(int argc, char const *argv[])
     }
     cout << endl;
 
+    // Print size of the vector
     cout << "int vector vi has " << vi.size() << " elements." << endl;
 
     vi[5] = 3;
     vi[6] = -1;
     vi[1] = 99;
 
+    // Print all elements of the vector
     for (auto item : vi)
     {
         cout << item << " ";
     }
     cout << endl;
+
+    // Sort whole vector alphabetically (string type)
+    sort(begin(vs),end(vs));
+    for(auto item : vs)
+    {
+        cout << item << " ";
+    }
+    cout << endl;
+
+    // Count how many threes this vector of integers has
+    int threes = count(begin(vi),end(vi),3);
+    cout << "vector of ints has " << threes << " elements 3." << endl;
+
+    // Count t's in the first word
+    int tees = count(begin(vs[0]),end(vs[0]),'t');
+    cout << "first word has " << tees << " letter t's."  << endl;
 
     return 0;
 }
