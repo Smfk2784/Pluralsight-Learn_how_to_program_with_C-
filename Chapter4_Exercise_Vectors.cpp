@@ -38,5 +38,17 @@ int main(int argc, char const *argv[])
     }
     cout << endl;
 
+    cout << "int vector vi has " << vi.size << " elements." << endl;
+
+    vi[5] = 3;
+    vi[6] = -1;
+    vi[1] = 99;
+
+    for (auto item : vi)
+    {
+        cout << item << " ";
+    }
+    cout << endl;
+
     return 0;
 }
