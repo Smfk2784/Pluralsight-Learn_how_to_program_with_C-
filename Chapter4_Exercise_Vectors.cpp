@@ -38,7 +38,7 @@ int main(int argc, char const *argv[])
     }
     cout << endl;
 
-    cout << "int vector vi has " << vi.size << " elements." << endl;
+    cout << "int vector vi has " << vi.size() << " elements." << endl;
 
     vi[5] = 3;
     vi[6] = -1;
